@@ -1,0 +1,384 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	text-decoration: none;
+	color: #000000;
+}
+
+
+body {
+
+	background: #DE6B16 url(../imagens/fundo.png);
+	font: 1em "Comfortaa-Bold", Arial, sans-serif;
+	
+
+}
+
+@font-face {
+
+	font-family: Comfortaa-Regular;
+	src: url("../fontes/Comfortaa-Regular.woff");
+}
+
+@font-face {
+
+	font-family: Comfortaa-Bold;
+	src: url("../fontes/Comfortaa-Bold.woff");
+}
+
+@font-face {
+
+	font-family: Comfortaa-Light;
+	src: url("../fontes/Comfortaa-Light.woff");
+}
+
+/* inicio menu navegação */
+
+nav {
+	background: #fff;
+	position: fixed;
+	z-index: 1;
+	top: 0%;
+	display: flex;
+    justify-content: flex-start;
+}
+
+
+nav ul {
+	display: flex;
+	background: #fff;
+	}
+
+nav li {
+	display: flex;
+	padding: 0.5em;
+	float: left;
+	line-height: 4em;
+
+}
+
+li p {
+	text-align: center;
+	margin-left: 10%;
+
+}
+
+#logo img {
+	width: 50%;
+	float: left;
+	margin-left: 3em;
+	margin-right: 4em;
+	margin-top: 0.5em;
+}
+
+a.menutopo {
+	text-decoration: none;
+	font-size: 0.8em;
+	padding-inline: 1em;
+}
+
+/* inicio configurações links menu*/
+
+/*link visitados*/
+ul a:link {
+	color: #c6c6c6;
+}
+
+/*link NÃO visitados*/
+ul a:visited {
+	color: #DE6B16;
+
+}
+/*passa o mause*/
+ul a:hover {
+	color: #000000;
+	font-size: 1em;
+	border-radius: 5px;
+	border: 1px solid #000000;
+	margin: 5px;
+}
+/*clicar em cima*/
+ul a:active {
+	color: #D9D9D9;
+}
+
+/* fim configurações links menu*/
+
+
+/* final menu navegação */
+
+
+/* inico menu corpo*/
+article {
+	width: 80%;
+	height: 100%;
+	background: #DE6B16;
+	margin: 0 auto;
+	border-radius: 30px;
+
+}
+	
+article h1{
+	font-size: 1.6em;
+	margin-left: 8%;
+	padding: 2%;
+	color: #6C6464;
+	
+	
+}
+
+article h2{
+	font-size: 2em;
+	position: absolute;
+	left: 8%;
+	top: 60%;
+	display: inline; /*coloca o texto em formato de sua extensão e não linha toda*/
+	color: #fff;
+	animation-name: animacao-movimento;
+	animation-duration: 5s;
+	animation-delay: 1s;
+	animation-iteration-count: 10000;
+
+}
+
+#topo {
+	position: absolute;
+	display: flex;
+	height: 30%;
+	width: 100%;
+	}
+
+#icon {
+	display: flex; /*quebro a icone*/
+	position: absolute; /*distribuo na tela abaixo*/
+	top: 50%;
+	left: 2%;
+}
+
+#acesso {
+	display: flex;
+	margin-top: 1%;
+}
+
+
+#acesso a {
+	font-size: 250%;
+	position: absolute;
+	top: 4%;
+	left: 30%;
+	
+}
+
+#acesso h1 {
+	font-size: 150%;
+		
+}
+
+#container {
+	width: 80%;
+	height: 80%;
+	position: absolute;
+	display: relative;
+	top: 30%;
+	background: rgba(255, 255, 255, 0.5);
+	border-radius: 20px;
+	margin: 0 auto;
+
+}
+
+#esquerda {
+		width: 45%;
+		height: 85%;
+		float: left;
+		position: relative;
+		margin-left: 6%;
+}
+
+#direita{
+	width:45%;
+	height: 85%;
+	float: left;
+	position: relative;
+
+}
+
+#senhaseguranca {
+	font-size: 0.45em;
+	padding: 5%;
+	display: flex;
+	line-height: 170%;
+}
+
+#caixa1 {
+	width: 60%;
+}
+
+#endereco-topo {
+	clear: both;
+	width: 96%;
+	display: flex;
+	flex-wrap: nowrap;
+	height: 12%;
+}
+
+#endereco-topo input {
+	height: 60%;
+	display: flex;
+	margin: 0 3% 0 0;
+}
+
+#esquerda svg {
+	position: absolute;
+	top: 1.8%;
+	left: 84%;
+
+
+
+}
+
+#cidade {
+	width: 250%;
+	}
+
+#cep {
+	width: 130%;
+}
+
+#uf {
+	width: 70%;
+}
+
+input {
+	width: 90%;
+	height: 7%;
+	border-radius: 10px;
+	padding: 10px;
+	outline: none;
+	border: none;
+	font: 0.8em "Comfortaa-Bold", Arial, sans-serif;
+}
+
+button {
+	background: #000000;
+	border: none;
+	color: #fff;
+	border-radius: 10px;
+	padding: 10px;
+	width: 94%;
+	height: 11%;
+	font: 1.5em "Comfortaa-Bold", Arial, sans-serif;
+}
+
+button:hover{
+	background: #4F4B4B;
+	cursor: pointer;	
+
+}
+
+/* fim menu corpo*/
+
+/* inicio icones */
+
+.input-with-digital {
+ 	background-image: url("../imagens/digital.svg");
+  	background-repeat: no-repeat;
+  	background-position-x: 97%; /* ajusta a posição horizontal do ícone */
+  	background-position-y: center; /* centraliza verticalmente o ícone */
+  	background-size: 1.5rem;
+}
+
+.input-with-pessoa {
+ 	background-image: url("../imagens/pessoa.svg");
+  	background-repeat: no-repeat;
+  	background-position-x: 97%; /* ajusta a posição horizontal do ícone */
+  	background-position-y: center; /* centraliza verticalmente o ícone */
+  	background-size: 1.5rem;
+}
+
+.input-with-agenda {
+	background-image: url("../imagens/agenda.svg");
+  	background-repeat: no-repeat;
+  	background-position-x: 97%; /* ajusta a posição horizontal do ícone */
+  	background-position-y: center; /* centraliza verticalmente o ícone */
+  	background-size: 1.5rem;
+
+}
+
+.input-with-telefone {
+	background-image: url("../imagens/telefone.svg");
+  	background-repeat: no-repeat;
+  	background-position-x: 97%; /* ajusta a posição horizontal do ícone */
+  	background-position-y: center; /* centraliza verticalmente o ícone */
+  	background-size: 1.5rem;
+
+}
+
+.input-with-carta {
+	background-image: url("../imagens/carta.svg");
+  	background-repeat: no-repeat;
+  	background-position-x: 97%; /* ajusta a posição horizontal do ícone */
+  	background-position-y: center; /* centraliza verticalmente o ícone */
+  	background-size: 1.5rem;
+
+}
+
+.input-with-cadeado {
+	background-image: url("../imagens/cadeado.svg");
+  	background-repeat: no-repeat;
+  	background-position-x: 97%; /* ajusta a posição horizontal do ícone */
+  	background-position-y: center; /* centraliza verticalmente o ícone */
+  	background-size: 1.2rem;
+
+}
+
+.input-with-endereco {
+	background-image: url("../imagens/casa.svg");
+  	background-repeat: no-repeat;
+  	background-position-x: 97%; /* ajusta a posição horizontal do ícone */
+  	background-position-y: center; /* centraliza verticalmente o ícone */
+  	background-size: 1.7rem;
+
+}
+
+/* fim icones *\
+
+/* inico menu rodapé*/
+
+footer {
+	position: absolute;
+	top: 110%;
+	margin-top: 2%;
+	width: 100%;
+	text-align: center;
+
+}
+
+
+/* fim menu rodapé*/
+
+/** inicio animações **/
+
+
+@keyframes animacao-movimento {
+
+	from {
+		left: 2000px;
+	}
+	to { 
+		position: relative;
+		left: 9%;
+	}
+
+}
+
+/** fim animações **/
+
+
+
+
+
+
+
+
+

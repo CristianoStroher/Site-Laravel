@@ -1,0 +1,330 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	text-decoration: none;
+	color: #000000;
+}
+
+
+body {
+
+	background: #DE6B16 url(../imagens/fundo.png);
+	font: 1em "Comfortaa-Bold", Arial, sans-serif;
+	
+
+}
+
+@font-face {
+
+	font-family: Comfortaa-Regular;
+	src: url("../fontes/Comfortaa-Regular.woff");
+}
+
+@font-face {
+
+	font-family: Comfortaa-Bold;
+	src: url("../fontes/Comfortaa-Bold.woff");
+}
+
+@font-face {
+
+	font-family: Comfortaa-Light;
+	src: url("../fontes/Comfortaa-Light.woff");
+}
+
+/* inicio menu navegação */
+
+nav {
+	background: #fff;
+	position: fixed;
+	z-index: 1;
+	top: 0%;
+	display: flex;
+    justify-content: flex-start;
+}
+
+
+nav ul {
+	display: flex;
+	background: #fff;
+	}
+
+nav li {
+	display: flex;
+	padding: 0.5em;
+	float: left;
+	line-height: 4em;
+
+}
+
+li p {
+	text-align: center;
+	margin-left: 10%;
+
+}
+
+#logo img {
+	width: 50%;
+	float: left;
+	margin-left: 3em;
+	margin-right: 4em;
+	margin-top: 0.5em;
+}
+
+a.menutopo {
+	text-decoration: none;
+	font-size: 0.8em;
+	padding-inline: 1em;
+}
+
+/* inicio configurações links menu*/
+
+/*link visitados*/
+ul a:link {
+	color: #c6c6c6;
+}
+
+/*link NÃO visitados*/
+ul a:visited {
+	color: #DE6B16;
+
+}
+/*passa o mause*/
+ul a:hover {
+	color: #000000;
+	font-size: 1em;
+	border-radius: 5px;
+	border: 1px solid #000000;
+	margin: 5px;
+}
+/*clicar em cima*/
+ul a:active {
+	color: #D9D9D9;
+}
+
+/* fim configurações links menu*/
+
+
+/* final menu navegação */
+
+
+/* inico menu corpo*/
+article {
+	height: 80%;
+	width: 80%;
+	position: absolute;
+	left: 10%;
+	background: #DE6B16;
+	border-radius: 30px;
+	padding: 1%;
+}
+
+#corpo {
+
+	height: 100%;
+	width: 100%;
+	background: #DE6B16;
+	margin: 0 auto;
+	border-radius: 30px;
+	float: flex;
+
+}
+
+#corpo p{
+	font-size: 1em;
+	position: relative;
+	top: 9%;
+	text-align: center;
+	color: #0c0c0c;
+	line-height: 1.5em;
+
+}
+
+#corpo h2{
+	font-size: 2.5em;
+	position: relative;
+	top: 5%;
+	right: 33%;
+	text-align: center;
+	color: #fff;
+	animation-name: animacao-movimento;
+	animation-duration: 5s;
+	animation-delay: 1s;
+	animation-iteration-count: 10000;
+
+
+}
+
+#corpo svg{
+	position: relative;
+	top: 15%;
+	left: 2%;
+}
+
+#container {
+	width: 50%;
+	height: 50%;
+	background: rgba(255, 255, 255, 0.5);
+	border-radius: 20px;
+	margin: 0 auto;
+	position: relative;
+	top: 10%;
+	float: flex;
+	display: flex;
+
+}
+
+#logocontainer {
+		width: 35%;
+		height: 100%;
+			
+
+}
+
+#logocontainer img {
+	width: 70%;
+	margin: 35% 15%;
+}
+
+#login {
+	position: absolute;
+	top: 15%;
+	left: 38%;
+	width:55%;
+	height: 80%;
+	float: left;
+	font-size: 0.7em;
+
+
+}
+
+#login input {
+	width: 95%;
+	height: 15%;
+	border-radius: 12px;
+	padding: 10px;
+	outline: none;
+	border: none;
+	font: 1.5em "Comfortaa-Bold", Arial, sans-serif;
+	
+
+}
+
+button {
+	background: #000000;
+	border: none;
+	color: #fff;
+	border-radius: 12px;
+	padding: 10px;
+	width: 100%;
+	height: 23%;
+	font: 2em "Comfortaa-Bold", Arial, sans-serif;
+
+
+}
+
+button:hover{
+	background: #4F4B4B;
+	cursor: pointer;	
+
+}
+
+#esquecisenha {
+	position: relative;
+	left: 5%;
+	font-size: 1.2em;
+
+	
+
+
+}
+
+
+
+
+
+/* fim menu corpo*/
+
+/* inico menu rodapé*/
+
+footer {
+	margin: 2%;
+	height: 10%;
+	text-align: center;
+	padding: 10px;
+
+
+}
+
+/* fim menu rodapé*/
+
+/** inicio animações **/
+
+
+@keyframes animacao-movimento {
+
+	from {
+		left: 1000px;
+	}
+	to { 
+		position: relative;
+		left: -33%;
+	}
+
+}
+
+/** fim animações **/
+
+/* inicio configurações links menu*/
+
+/*link visitados*/
+ul a:link {
+	color: #c6c6c6;
+}
+
+/*link NÃO visitados*/
+ul a:visited {
+	color: #DE6B16;
+
+}
+/*passa o mause*/
+ul a:hover {
+	color: #000000;
+	font-size: 1.2em;
+	border-radius: 5px;
+	border: 1px solid #000000;
+	margin: 5px;
+}
+/*clicar em cima*/
+ul a:active {
+	color: #D9D9D9;
+}
+
+/* fim configurações links menu*/
+
+/* inicio icons*/
+.input-with-cadeado {
+	background-image: url("../imagens/cadeado.svg");
+  	background-repeat: no-repeat;
+  	background-position-x: 97%; /* ajusta a posição horizontal do ícone */
+  	background-position-y: center; /* centraliza verticalmente o ícone */
+  	background-size: 1.2rem;
+
+}
+
+.input-with-carta {
+	background-image: url("../imagens/carta.svg");
+  	background-repeat: no-repeat;
+  	background-position-x: 97%; /* ajusta a posição horizontal do ícone */
+  	background-position-y: center; /* centraliza verticalmente o ícone */
+  	background-size: 1.5rem;
+
+}
+
+
+/* inicio icons*/
+
+
+
+
