@@ -2,6 +2,7 @@
 
 use Faker\Guesser\Name;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,9 +29,11 @@ Route::get('/acesso', function () {
     return view('acesso');
 })->name('acesso');
 
-Route::get('/principal', function () {
+Route::get('/principal', function () {    
     return view('principal');
 })->name('principal');
+
+
 
 /* fim das rotas de acesso paginas */ 
 
@@ -41,10 +44,21 @@ Route::get('/usuario', [App\Http\Controllers\UsuarioController::class, 'index'])
 
 Route::post('/cadastro',[App\Http\Controllers\UsuarioController::class, 'create'])->name('create');
 
-Route::post('/acesso',[App\Http\Controllers\Auth\AuthController::class, 'login'])->name('login');
+Route::post('/acesso',[App\Http\Controllers\AuthController::class, 'login'])->name('login');
 
-Route::post('/login',[App\Http\Controllers\Auth\AuthController::class, 'login'])->name('login');
+Route::post('/principal',[App\Http\Controllers\AuthController::class, 'principal'])->name('principal');
 
-Route::post('/login',[App\Http\Controllers\Auth\AuthController::class, 'login'])->middleware('auth');
 
-Route::post('/logout',[App\Http\Controllers\Auth\AuthController::class, 'logout'])->name('logout');
+
+// Rota para exibir o formulário de login
+Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
+
+// Rota para processar a autenticação do usuário
+Route::post('/login', [AuthController::class, 'login'])->name('login.post');
+
+Route::get('/principal', [HomeController::class, 'principal'])->middleware('auth')->name('principal');
+
+
+
+
+

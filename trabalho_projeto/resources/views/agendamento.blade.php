@@ -4,9 +4,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>PRINCIPAL</title>
+	<title>AGENDAMENTO</title>
 
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/principal.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/agendamento.css')}}">
 
 </head>
 
@@ -66,54 +66,63 @@
 				</svg>
 				
 
-				<h2>AMBIENTE DO CLIENTE</h2>
+				<h2>AMBIENTE DO CLIENTE - AGENDAMENTO</h2>
 
 			</div>
+
+				<div id="texto">
+
+						<h3>Olá, agende seu estacionamento com praticidade e no conforto de sua casa informando os dados abaixo:</h3>
+
+				</div>
 
 
 			<div id="container">
 
-					<div id="texto">
-
-						<h3>Seja bem-vindo,<br><br>
-						<strong>O QUE DESEJA FAZER?</strong></h3>
-
-					</div>
-							
-
-					<div class="button-funcoes">
-
-						<button onclick="redirecionar()">AGENDAR ESTACIONAMENTO</button>
-						<div class="texto-funcoes">
-							<p> Você pode alugar nossas vagas antecipadamente garantindo mais conforto e praticidade.</p>
+				<div class="top-divs">
+					<div id="input-dentro">
+						<div class="textos-divs">
+							<p> Dados do Agendamento</p>
 						</div>
-
-					</div>
-
-					<div class="button-funcoes">
-						
-						<button onclick="redirecionar()">CONSULTAR HISTÓRICO</button>
-												
-						<div class="texto-funcoes">
-							<p>Também você pode consultar todo seu histórico de movimentações.</p>
+						<div>
+							<input type="numero" name="data-entrada" id="data-entrada" class="input-with-digital" required autofocus placeholder="Data Entrada">
+							<input type="numero" name="data-saida" id="data-saida" class="input-with-digital" required autofocus placeholder="Data Saída">
 						</div>
-						
-						
-					</div>
-
-					<div class="button-funcoes">
-
-						<button type="submit">CADASTRO</button>
-						<div class="texto-funcoes">
-							<p>Ainda você pode consultar, alterar e controlar seu cadastro.</p>
-
+						<div>
+							<input type="numero" name="horario-entrada" id="horario-entrada" class="input-with-digital" required autofocus placeholder="Horário Entrada">
+							<input type="numero" name="horario-saida" id="horario-saida" class="input-with-digital" required autofocus placeholder="Horário Saída">
 						</div>
-					
+						<div>
+							<input type="text" name="plano" id="plano" class="input-with-digital2" required autofocus placeholder="Escolha o Plano">	
+						</div>
+						<div>
+							<input type="numero" name="vaga" id="vaga" class="input-with-digital2" required autofocus placeholder="Escolha a Vaga">
+						</div>
 					</div>
-																				
 
-					
-				
+					<div id="input-dentro">
+						<div class="textos-divs">
+							<p> Dados do Veículo</p>
+						</div>
+						<div>
+							<input type="text" name="modelo" id="modelo" class="input-with-digital2" required autofocus placeholder="Modelo">
+						</div>
+						<div>
+							<input type="text" name="marca" id="marca" class="input-with-digital" required autofocus placeholder="Marca">
+							<input type="numero" name="ano" id="ano" class="input-with-digital" required autofocus placeholder="Ano do Modelo">
+						</div>
+						<div>
+							<input type="text" name="cor" id="cor" class="input-with-digital" required autofocus placeholder="Cor">
+							<input type="text" name="placa" id="placa" class="input-with-digital" required autofocus placeholder="Placa">
+						</div>
+						<div id="total-pagar">Valor a Pagar R$33,00</div>
+					</div>
+				</div>
+
+				<div class="bottom-div">
+					<button>CONFIRMAR</button>	
+				</div>		
+
 					
 
 			</div>
@@ -125,18 +134,7 @@
 
 	</article>
 
-	<footer>
 
-		&copy; 2023 - Cristiano Alberto Stroher
-
-
-	</footer>
-
-	<script>
-		 function redirecionar() {
-			window.location.href = "agendamento.html";
-		 }
-	</script>
 
 
 

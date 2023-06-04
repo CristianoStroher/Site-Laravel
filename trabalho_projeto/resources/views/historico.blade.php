@@ -4,9 +4,9 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<title>PRINCIPAL</title>
+	<title>HISTORICO</title>
 
-	<link rel="stylesheet" type="text/css" href="{{ asset('css/principal.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{ asset('css/historico.css')}}">
 
 </head>
 
@@ -66,57 +66,42 @@
 				</svg>
 				
 
-				<h2>AMBIENTE DO CLIENTE</h2>
+				<h2>AMBIENTE DO CLIENTE - HISTÓRICO</h2>
 
 			</div>
 
+				<div id="texto">
 
-			<div id="container">
+						<h3>Olá, consulte e controle seus agendamentos.</h3>
 
-					<div id="texto">
+				</div>
 
-						<h3>Seja bem-vindo,<br><br>
-						<strong>O QUE DESEJA FAZER?</strong></h3>
 
-					</div>
-							
+				<div id="container">
 
-					<div class="button-funcoes">
-
-						<button onclick="redirecionar()">AGENDAR ESTACIONAMENTO</button>
-						<div class="texto-funcoes">
-							<p> Você pode alugar nossas vagas antecipadamente garantindo mais conforto e praticidade.</p>
-						</div>
-
+					<div class="textos-divs">
+							<p> Histórico dos Agendamentos</p>
 					</div>
 
-					<div class="button-funcoes">
-						
-						<button onclick="redirecionar()">CONSULTAR HISTÓRICO</button>
-												
-						<div class="texto-funcoes">
-							<p>Também você pode consultar todo seu histórico de movimentações.</p>
-						</div>
-						
-						
-					</div>
+					<div class="top-divs"></div>
 
-					<div class="button-funcoes">
+					<div class="bottom-div">
 
-						<button type="submit">CADASTRO</button>
-						<div class="texto-funcoes">
-							<p>Ainda você pode consultar, alterar e controlar seu cadastro.</p>
+							<button>AGENDAR</button>	
+											
+							<button>EXCLUIR</button>	
+													
+							<button>ALTERAR</button>	
+													
+							<button>ENVIAR</button>	
+					</div>	
 
-						</div>
-					
-					</div>
-																				
 
-					
-				
+
 					
 
 			</div>
+		
 								
 
 		
@@ -125,18 +110,7 @@
 
 	</article>
 
-	<footer>
 
-		&copy; 2023 - Cristiano Alberto Stroher
-
-
-	</footer>
-
-	<script>
-		 function redirecionar() {
-			window.location.href = "agendamento.html";
-		 }
-	</script>
 
 
 

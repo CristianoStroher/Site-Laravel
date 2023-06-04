@@ -83,7 +83,7 @@
 
 						<input type="email" name="email" id="email" class="input-with-carta" required autofocus placeholder="E-mail">
 						<br><br>
-						<input type="password" name="password" id="senha" class="input-with-cadeado" required placeholder="Senha">
+						<input type="password" name="password" id="password" class="input-with-cadeado" required placeholder="Senha">
 						<br><br><br>
 						<button type="submit">ENTRAR</button>
 						<br><br>
