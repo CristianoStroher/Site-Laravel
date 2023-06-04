@@ -1,0 +1,11 @@
+Crie as validações no Front também, como telefone, CPF e UF.
+
+No model era necessario passar o nome das colunas do banco, 
+existia também uma coluna DS_LOGIN, não sabia para que servia, e ela era notNull mas não era preenchida no formulario 
+(exclui para conseguir finalizar o cadastro)
+
+Depois de cadastrar os usuários, foque em listar eles, com opção de listar, editar e excluir.
+não se preocupe com o Login - Lembre que o objetivo é fazer o CRUD
+ 
+MVC - Já esta estruturado - Está percorrendo Model a View e o Controller.
+

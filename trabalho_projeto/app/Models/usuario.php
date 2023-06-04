@@ -10,16 +10,15 @@ class usuario extends Model
     protected $table = 'est_cas_pessoa';
 
     protected $fillable = [
-        'nome',
-        'email',
-        'senha',
-        'cpf',
-        'data_nascimento',
-        'telefone',
-        'cidade',
-        'cep',
-        'uf',
-        'endereco'
+        'nm_nome',
+        'ds_email',
+        'ds_senha',
+        'ds_cpf',
+        'ds_telefone',
+        'ds_cidade',
+        'ds_cep',
+        'ds_uf',
+        'ds_endereco'
     ];
 
 };
