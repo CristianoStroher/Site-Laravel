@@ -9,3 +9,5 @@ não se preocupe com o Login - Lembre que o objetivo é fazer o CRUD
  
 MVC - Já esta estruturado - Está percorrendo Model a View e o Controller.
 
+Na minha próxima atualização, vou deixar as migrations prontas, com base no Sql que mandou.
+
