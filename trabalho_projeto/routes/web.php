@@ -33,6 +33,14 @@ Route::get('/principal', function () {
     return view('principal');
 })->name('principal');
 
+Route::get('/agendamento', function () {    
+    return view('agendamento');
+})->name('agendamento');
+
+Route::get('/historico', function () {    
+    return view('historico');
+})->name('historico');
+
 
 
 /* fim das rotas de acesso paginas */ 
@@ -44,19 +52,10 @@ Route::get('/usuario', [App\Http\Controllers\UsuarioController::class, 'index'])
 
 Route::post('/cadastro',[App\Http\Controllers\UsuarioController::class, 'create'])->name('create');
 
-Route::post('/acesso',[App\Http\Controllers\AuthController::class, 'login'])->name('login');
-
-Route::post('/principal',[App\Http\Controllers\AuthController::class, 'principal'])->name('principal');
 
 
 
-// Rota para exibir o formulário de login
-Route::get('/login', [AuthController::class, 'showLoginForm'])->name('login');
 
-// Rota para processar a autenticação do usuário
-Route::post('/login', [AuthController::class, 'login'])->name('login.post');
-
-Route::get('/principal', [HomeController::class, 'principal'])->middleware('auth')->name('principal');
 
 
 

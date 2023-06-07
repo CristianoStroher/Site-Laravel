@@ -1,0 +1,3 @@
+problema fazer o login;
+acessar as demais paginas para fazer o crud;
+problema com a junção das duas atividades
