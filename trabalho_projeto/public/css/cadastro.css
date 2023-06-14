@@ -364,10 +364,14 @@ footer {
 
 	from {
 		left: 2000px;
+		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 	}
 	to { 
 		position: relative;
 		left: 9%;
+		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 	}
 
 }

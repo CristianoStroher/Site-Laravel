@@ -10,7 +10,7 @@
 body {
 
 	background: #DE6B16 url(../imagens/fundo.png);
-	font: 1em "Comfortaa-Bold", Arial, sans-serif;
+	font: 1em "Comfortaa-Bold", Arial, Sans-serif;
 	
 
 }
@@ -223,10 +223,13 @@ footer {
 
 	from {
 		left: 1000px;
+		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 	}
 	to { 
 		position: relative;
 		left: 5%;
+		font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 	}
 
 }

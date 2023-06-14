@@ -24,12 +24,12 @@
 
 					<li>
 						<svg width="20%" viewBox="0 0 41 37" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 13.2292L20.375 2L38.75 13.2292" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M34.6667 20.375V33.4417C34.6667 34.1183 34.1183 34.6667 33.4417 34.6667H7.30834C6.6318 34.6667 6.08334 34.1183 6.08334 33.4417V20.375" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
-						<a href="principal.html" class="menutopo">HOME</a><p>|</p></li>
+						<a href="#" class="menutopo">HOME</a><p>|</p></li>
 
 					<li>
 						<svg width="20%" viewBox="0 0 47 44" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.5835 14.0455L22.0383 3.0579C22.7384 1.64737 24.7616 1.64737 25.4617 3.0579L30.9164 14.0455L43.1151 15.8184C44.6803 16.0458 45.304 17.9587 44.171 19.056L35.3456 27.6028L37.4283 39.6769C37.6959 41.2276 36.0589 42.4099 34.6584 41.6776L23.75 35.9738L12.8415 41.6776C11.4411 42.4099 9.80409 41.2276 10.0715 39.6769L12.1543 27.6028L3.32908 19.056C2.19596 17.9587 2.81977 16.0458 4.3849 15.8184L16.5835 14.0455Z" fill="#DE6B16" stroke="black" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
 						</svg>
-						<a href="" class="menutopo">RESERVAS</a>
+						<a href="#" class="menutopo">RESERVAS</a>
 						<p>|</p>
 					</li>
 

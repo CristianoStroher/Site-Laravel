@@ -76,7 +76,7 @@
 					
 				</div>
 
-				<form method="POST" action="{{ route('login') }}">
+				<form method="POST" action="{{ route('acesso') }}">
 					@csrf
 
 					<div id="login">
@@ -85,7 +85,7 @@
 						<br><br>
 						<input type="password" name="password" id="password" class="input-with-cadeado" required placeholder="Senha">
 						<br><br><br>
-						<button type="submit">ENTRAR</button>
+						<button type="submit" id="logar">ENTRAR</button>
 						<br><br>
 						<a href="" id="esquecisenha">Esqueci minha senha</a>
 														

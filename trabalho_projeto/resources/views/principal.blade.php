@@ -92,7 +92,7 @@
 
 					<div class="button-funcoes">
 						
-						<button onclick="redirecionar1()">CONSULTAR HISTÓRICO</button>
+						<button onclick="redirecionar1()">CONSULTAR USUÁRIOS</button>
 												
 						<div class="texto-funcoes">
 							<p>Também você pode consultar todo seu histórico de movimentações.</p>
