@@ -41,9 +41,6 @@ Route::get('/historico', function () {
     return view('historico');
 })->name('historico');
 
-Route::get('/principal2', function () {    
-    return view('principal2');
-})->name('principal2');
 
 
 
@@ -57,6 +54,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::get('/usuario', [App\Http\Controllers\UsuarioController::class, 'index'])->name('usuario');
 
 Route::post('/cadastro',[App\Http\Controllers\UsuarioController::class, 'create'])->name('create');
+
+Route::get('/historico', [App\Http\Controllers\UsuarioController::class, 'index'])->name('listar');
 
 
 
