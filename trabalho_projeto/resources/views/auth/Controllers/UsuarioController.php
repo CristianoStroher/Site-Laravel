@@ -16,7 +16,7 @@ class UsuarioController extends Controller
         return view('usuario', ['users' => $users]);
     }
 
-    public function create(Request $request)
+      public function create(Request $request)
     {
         $validator = Validator::make($request->all(), [
             // outras regras de validação

@@ -81,7 +81,32 @@
 
 					<div class="textos-divs">
 							<p>Relação de Usuários</p>
+						<table>
+							<tr>
+
+							<th>Nome</th>
+							<th>CPF</th>
+							<th>CNPJ</th>
+							<th>Email</th>
+							<th>Contato</th>
+							<th>Endereço</th>
+							<th>Cidade</th>
+							</tr>
+							@foreach ($historicos as $historico) 
+							<tr>
+							<td>{{$historico -> nm_nome}}</td>
+							<td>{{$historico -> ds_cpf}}</td>
+							<td>{{$historico -> ds_cnpj}}</td>
+							<td>{{$historico -> ds_email}}</td>
+							<td>{{$historico -> ds_telefone}}</td>
+							<td>{{$historico -> ds_endereco}}</td>
+							<td>{{$historico -> ds_cidade}}</td>
+							</tr>
+							@endforeach
+						</table>
 					</div>
+
+
 
 					<div class="top-divs"></div>
 

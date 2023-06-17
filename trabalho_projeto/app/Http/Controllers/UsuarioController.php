@@ -13,7 +13,7 @@ class UsuarioController extends Controller
     public function index()
     {
         $users = Usuario::all();
-        return view('usuario', ['est_cas_pessoa' => $users]);
+        return view('historico', ['est_cas_pessoa' => $users]);
     }
 
     public function create(Request $request)
