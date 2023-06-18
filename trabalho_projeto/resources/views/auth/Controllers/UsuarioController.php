@@ -57,13 +57,13 @@ class UsuarioController extends Controller
             }
     
             // Verifica se o CPF já existe na tabela
-            if (Usuario::where('ds_cpf', $documento)->exists()) {
+            if (Usuario::where('cpf', $documento)->exists()) {
                 $errors = ['documento' => 'CPF já cadastrado.'];
                 return redirect()->back()->withErrors($errors)->withInput();
             }
     
             // Verifica se o CNPJ já existe na tabela
-            if (Usuario::where('ds_cnpj', $documento)->exists()) {
+            if (Usuario::where('cnpj', $documento)->exists()) {
                 $errors = ['documento' => 'CNPJ já cadastrado.'];
                 return redirect()->back()->withErrors($errors)->withInput();
             }
